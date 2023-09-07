@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.shortify.com','127.0.0.1','shortify.com']
+ALLOWED_HOSTS = ['https://git.heroku.com/url-shorty.git']
 
 
 # Application definition
