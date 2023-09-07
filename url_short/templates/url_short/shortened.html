@@ -1,0 +1,15 @@
+{% extends 'url_short/base.html' %}
+{% block content %}
+
+<h1>Shortened URL</h1>
+<p>Your shortened URL is:</p>
+<a href="{{ object.get_shortened_url }}" class='p-2'>{{ object.get_shortened_url }}</a>
+<p>The long url:</p>
+<a href="{{ object.url }}">{{ object.url }}</a>
+{% endblock content %}
+{% block footer %}
+<a href="/" class="colorbuttonsmall">Shorten another URL</a>
+<a href='{% url 'total_clicks' object.shortcode %}' class="colorbuttonsmall">Total number of clicks</a>
+{% endblock footer %}
+
+

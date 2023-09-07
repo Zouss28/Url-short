@@ -1,0 +1,17 @@
+{% extends 'url_short/base.html' %}
+{% block content %}
+<h2>Paste the URL to be shortened</h2>
+<form action="." method="POST" >
+    {% csrf_token %}
+    <div id='formurl'>
+        <input type="url" name="url" placeholder="Enter URL"  required>
+        <div id='formbutton'>
+            <button type="submit">Shorten</button>
+        </div>
+    </div>
+
+    
+</form>
+<p>Shortify is a free tool to shorten URLs and generate short links</p>
+<p>URL shortener allows to create a shortened link making it easy to share</p>
+{% endblock content %}

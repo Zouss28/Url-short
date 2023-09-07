@@ -1,0 +1,18 @@
+{% extends 'url_short/base.html' %}
+{% block content %}
+
+<h1>Total URL Clicks</h1> 
+<p>The number of clicks from the shortened URL that redirected the user to the destination page.</p>
+<a href="{{ object.get_shortened_url }}" class='p-2'>{{ object.get_shortened_url }}</a>
+{% if object.clickevent %}
+<p>Count: {{ object.clickevent.count }}</p>
+{% else %}
+<p>Count: 0</p>
+{% endif %} 
+
+
+{% endblock content %}
+{% block footer %}
+<a href="/" class="colorbuttonsmall">Shorten another URL</a>
+{% endblock footer %}
+
