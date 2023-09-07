@@ -15,7 +15,7 @@ class urlShort(models.Model):
     @property
     def get_shortened_url(self):
         # Generate the dynamic shortened URL using the current domain and shortened code
-        return f"http://shortify.com:8000/{self.shortcode}"
+        return f"https://url-shorty-9cc55d4f7e2f.herokuapp.com/{self.shortcode}"
     
 class ClickEventManager(models.Manager):
     def create_event(self, instance):
