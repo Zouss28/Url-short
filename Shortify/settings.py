@@ -22,7 +22,7 @@ django_heroku.settings(locals())
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-d0o%kr0*jde%%f-m41b)&!$nf#&o9+i&s0=uj((@j66sq9pd9a"
+#SECRET_KEY = "django-insecure-d0o%kr0*jde%%f-m41b)&!$nf#&o9+i&s0=uj((@j66sq9pd9a"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
